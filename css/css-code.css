@@ -1,0 +1,224 @@
+body {
+}
+
+h1 {
+}
+
+h2 {
+  font
+}
+
+h3 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+h4 {
+}
+
+h5 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+a {
+  font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navigation {
+  width: 1054px;
+  height: 74px;
+  margin: 0 auto;
+  padding: 0 73px;
+}
+
+.navigation ul {
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  vertical-align: top;
+  margin-left: 0px;
+  margin-top: 15px;
+
+}
+
+.navigation li:nth-child(1) {
+  margin-left: -px;
+}
+
+.navigation li:nth-child(2) {
+  margin-left: 143px;
+}
+
+.navigation li:nth-child(3) {
+  position: left;
+  margin-top: 0px;
+  margin-left: 115px;
+}
+
+.navigation li:nth-child(4) {
+  margin-left: 125px;
+}
+
+.navigation li:nth-child(5) {
+  margin-left: 161px;
+}
+
+.header-images img:nth-child(1) {
+  position: absolute;
+  margin-bottom: 100px;
+  margin-top: -10px;
+}
+
+.header-images img:nth-child(2) {
+  position: relative;
+  top: 451px;
+}
+
+.sedona-cause {
+  margin-top: 448px;
+  margin-bottom: 1px;
+  padding-left: 355px;
+  padding-top: 39px;
+  padding-bottom: 30px;
+  height: 151px;
+  text-align: center;
+}
+
+.sedona-cause h3  {
+  width: 490px;
+  margin-bottom: 31px;
+}
+
+.sedona-cause p {
+  width: 490px;
+}
+
+
+.all-center {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.namber-one {
+  margin-bottom: 1000px;
+}
+
+.text {
+  width: 400px;
+  height: 201px;
+  background-color: #81b3d2;
+  padding-top: 55px;
+  color: #fff;
+  text-align: center;
+}
+
+.text h3 {
+  width: 160px;
+  margin: 0 auto;
+  line-height: 21px;
+}
+
+.text p {
+  width: 282px;
+  margin: 0 auto;
+  margin-top: 22px;
+  line-height: 21px;
+}
+
+.img-namber {
+  float: right;
+  margin-top: -256px;
+  width: 800px;
+  height: 256px;
+}
+
+.advantage {
+  height: 330px;
+  margin-bottom: 10000px;
+}
+
+.advantage .motel {
+  width: 400px;
+  height: 300px;
+  float: left;
+  text-align: center;
+}
+
+.advantage .motel p {
+  width: 286px;
+  margin: 0 auto;
+  line-height: 21px;
+}
+
+.advantage .motel .hotel1 {
+  margin-top: 52px;
+}
+
+.advantage .motel .hotel2 {
+  margin-top: 51px;
+}
+
+.advantage .motel .hotel3 {
+  margin-top: 56px;
+}
+
+#img-hotel {
+  margin-top: 60px;
+}
+
+#img-eat {
+  margin-top: 61px;
+}
+
+#img-present {
+  margin-top: 56px;
+}
+
+
+/*
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+body > * > * > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > * > * > * > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
