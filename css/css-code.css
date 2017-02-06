@@ -5,7 +5,9 @@ h1 {
 }
 
 h2 {
-  font
+  font-family: 'PT Sans', sans-serif;
+  font-size: 30px;
+  font-size: 21px;
 }
 
 h3 {
@@ -93,7 +95,7 @@ a {
 
 .header-images img:nth-child(2) {
   position: relative;
-  top: 451px;
+  top: 441px;
 }
 
 .sedona-cause {
@@ -122,7 +124,7 @@ a {
 }
 
 .namber-one {
-  margin-bottom: 1000px;
+  margin-bottom: 3px;
 }
 
 .text {
@@ -156,7 +158,7 @@ a {
 
 .advantage {
   height: 330px;
-  margin-bottom: 10000px;
+  margin-bottom: 0px;
 }
 
 .advantage .motel {
@@ -164,6 +166,7 @@ a {
   height: 300px;
   float: left;
   text-align: center;
+  padding-bottom:30px;
 }
 
 .advantage .motel p {
@@ -172,16 +175,8 @@ a {
   line-height: 21px;
 }
 
-.advantage .motel .hotel1 {
-  margin-top: 52px;
-}
-
-.advantage .motel .hotel2 {
-  margin-top: 51px;
-}
-
-.advantage .motel .hotel3 {
-  margin-top: 56px;
+.advantage .motel h3 {
+  margin-top: 23px;
 }
 
 #img-hotel {
@@ -189,15 +184,116 @@ a {
 }
 
 #img-eat {
-  margin-top: 61px;
+  margin-top: 62px;
 }
 
 #img-present {
   margin-top: 56px;
 }
 
+.namber-two {
+  margin-bottom: 0px;
+}
 
-/*
+.text:nth-of-type(2) {
+  float: right;
+}
+
+.namber-two .img-namber {
+  float: left;
+  margin-top: 0px;
+}
+
+.nambers-rem {
+  height: 256px;
+  margin-bottom: 3px;
+  background-color: #eeeeee;
+}
+
+.nambers-rem div {
+  width: 400px;
+  height: 207px;
+  float: left;
+  text-align: center;
+  padding-top: 49px;
+}
+
+.nambers-rem div h3 {
+  width: 120px;
+  margin: 0 auto;
+  line-height: 21px;
+  margin-bottom: 24px;
+}
+
+.nambers-rem div p {
+  width: 265px;
+  margin:  0 auto;
+  line-height: 21px;
+  margin-top: 21px;
+}
+
+.map-top {
+  margin-bottom: 0px;
+  height: 233px;
+  padding-top: 58px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.map-top h2 {
+  width: 210px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.map-top p {
+  width: 440px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 568px;
+  height: 87px;
+  color: #fff;
+  outline: none;
+  background-color: #766357;
+  margin-top: 53px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+}
+
+footer {
+  color: #000000;
+  background-color: #fff;
+  height: 120px;
+}
+
+footer h3 {
+  width: 140px;
+  float: left;
+}
+
+footer ul {
+  width: 150px;
+  float: right;
+}
+
+.make {
+  width: 195px;
+  height: 39px;
+  float: right;
+}
+
+.make p {
+  width: 74px;
+  margin: auto 0;
+}
+
+.make img {
+}
+
+
 body > * {
   background: rgba(0, 128, 0, 0.2);
   box-shadow: 0 0 0 3px green;
