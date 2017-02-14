@@ -5,6 +5,7 @@
     <title>Седона - отели</title>
     <link rel="stylesheet" href="css/css-code.css">
     <link rel="stylesheet" href="css/narmalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   </head>
   <body>
     <div class="all-center">
@@ -13,118 +14,118 @@
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-            <li><img src="http://placehold.it/138x70" width="138" height="70" alt="logo" /></li>
+            <li><img src="img/logo.png" width="138" height="70" alt="logo" /></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостинецы</a></li>
+            <li><a href="#">Гостиницы</a></li>
           </ul>
         </div>
       </header>
       <main>
         <div class="filter">
-          <aside class="catalog-filter1">
+          <div class="bk-block">
+            <aside class="catalog-filter1">
+              <form method="get">
+                <h4>Инфраструктура:</h4>
+                <input type="checkbox" id="che1" checked>
+                <label for="che1">Басейн</label>
+                <input type="checkbox" id="che2">
+                <label for="che2">Парковка</label>
+                <input type="checkbox" id="che3">
+                <label for="che3">Wi-Fi</label>
+              </form>
+            </aside>
+            <aside class="catalog-filter2">
+              <form method="get">
+                <h4>Тип жилья:</h4>
+                <input type="checkbox" id="ch1" checked>
+                <label for="ch1">Гостиница</label>
+                <input type="checkbox" id="ch2" checked>
+                <label for="ch2">Мотель</label>
+                <input type="checkbox" id="ch3" checked>
+                <label for="ch3">Аппартаменты</label>
+              </form>
+            </aside>
             <form method="get">
-              <h4>Инфраструктура:</h4>
-              <input type="checkbox" id="che1" checked>
-              <label for="che1">Басейн</label>
-              <input type="checkbox" id="che2">
-              <label for="che2">Парковка</label>
-              <input type="checkbox" id="che3">
-              <label for="che3">Wi-Fi</label>
-            </form>
-          </aside>
-          <aside class="catalog-filter2">
-            <form method="get">
-              <h4>Тип жилья:</h4>
-              <input type="checkbox" id="ch1" checked>
-              <label for="ch1">Гостинныца</label>
-              <input type="checkbox" id="ch2" checked>
-              <label for="ch2">Мотель</label>
-              <input type="checkbox" id="ch3" checked>
-              <label for="ch3">Аппартаменты</label>
-            </form>
-          </aside>
-          <form method="get">
-            <div class="geting">Стоимость в сутки (Р):</div>
-            <div class="filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
+              <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
               </div>
-              <div class="price">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="3000"></label>
-              </div>
-              <div class="button">
-                <a class="btn" href="#">Показать</a>
-              </div>
-            </div>
-          </form>
-          <div class="found">
+            </form>
+          </div>
+          <div class="found clearfix">
             <div class="foundet">
               <h3>Найдено: 3</h3>
             </div>
-            <div class="sorting">
+            <div class="sorting clearfix">
               <h5>Сортировка:</h5>
               <ul>
                 <li><a href="#"><p class="active">По цене</p></a></li>
-                <li><a href="#"><p>По типу</p></a></li>
-                <li><a href="#"><p>По рейтингу</p></a></li>
+                <li><a href="#"><p class="not-active">По типу</p></a></li>
+                <li><a href="#"><p class="not-active">По рейтингу</p></a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="example">
-          <div class="hotel">
-            <img src="http://placehold.it/135x90" width="135" height="90" alt="hotel" />
-            <h3>Amara Resort & Spa</h3>
-            <div class="cost">
-              <p>Гостиница</p>
-              <p>от 4000 Р</p>
+          <div class="padding-hotel">
+            <div class="hotel clearfix">
+              <img src="img/hotel.png" width="135" height="90" alt="hotel" />
+              <h3>Amara Resort & Spa</h3>
+              <div class="cost">
+                <p>Гостиница</p>
+                <p>от 4000 Р</p>
+              </div>
+              <div class="bottoms">
+                <a href="#"><div class="bottom1">Подробнее</div></a>
+                <a href="#"><div class="bottom2">Забронировать</div></a>
+              </div>
+              <div class="rating"><p>Рейтинг: 8,5</p></div>
             </div>
-            <div class="bottom1">
-              <a href="#">Подробнее</a>
-            </div>
-            <div class="bottom2">
-              <a href="#">Забронировать</a>
-            </div>
-            <div class="rating">Рейтинг: 8,5</div>
           </div>
         </div>
         <div class="example">
-          <div class="hotel">
-            <img src="http://placehold.it/135x90" width="135" height="90" alt="hotel" />
-            <h3>Desert Quail Inn</h3>
-            <div class="cost">
-              <p>Мотель</p>
-              <p>от 3000 Р</p>
+          <div class="padding-hotel">
+            <div class="hotel">
+              <img src="img/motel.png" width="135" height="90" alt="hotel" />
+              <h3>Desert Quail Inn</h3>
+              <div class="cost">
+                <p>Мотель</p>
+                <p>от 3000 Р</p>
+              </div>
+              <div class="bottoms">
+                <a href="#"><div class="bottom1">Подробнее</div></a>
+                <a href="#"><div class="bottom2">Забронировать</div></a>
+              </div>
+              <div class="rating"><p>Рейтинг: 8,9</p></div>
             </div>
-            <div class="bottom1">
-              <a href="#">Подробнее</a>
-            </div>
-            <div class="bottom2">
-              <a href="#">Забронировать</a>
-            </div>
-            <div class="rating">Рейтинг: 8,9</div>
           </div>
         </div>
         <div class="example">
-          <div class="hotel">
-            <img src="http://placehold.it/135x90" width="135" height="90" alt="hotel" />
-            <h3>Villas at Poco Diablo</h3>
-            <div class="cost">
-              <p>Апартаменты</p>
-              <p>от 2000 Р</p>
+          <div class="padding-hotel">
+            <div class="hotel">
+              <img src="img/villa.png" width="135" height="90" alt="hotel" />
+              <h3>Villas at Poco Diablo</h3>
+              <div class="cost">
+                <p>Апартаменты</p>
+                <p>от 2000 Р</p>
+              </div>
+              <div class="bottoms">
+                <a href="#"><div class="bottom1">Подробнее</div></a>
+                <a href="#"><div class="bottom2">Забронировать</div></a>
+              </div>
+              <div class="rating"><p>Рейтинг: 9,2</p></div>
             </div>
-            <div class="bottom1">
-              <a href="#">Подробнее</a>
-            </div>
-            <div class="bottom2">
-              <a href="#">Забронировать</a>
-            </div>
-            <div class="rating">Рейтинг: 9,2</div>
           </div>
         </div>
       </main>
