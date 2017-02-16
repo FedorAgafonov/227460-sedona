@@ -117,6 +117,7 @@ a {
 .all-center {
   margin: 0 auto;
   width: 1200px;
+  border-left: ;
 }
 
 .namber-one {
@@ -523,6 +524,9 @@ input[type="checkbox"]:checked + label::after {
 .padding-hotel {
   height: 90px;
   padding: 30px 73px;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  margin-bottom: -2px;
 }
 
 .hotel {
@@ -602,6 +606,34 @@ input[type="checkbox"]:checked + label::after {
   margin-left: 16px;
 }
 
+footer {
+  margin-top: 1000px;
+}
+
+.visit {
+  width: 140px;
+  font-size: 21px;
+}
+
+.link {
+  width: 154px;
+  margin: 0 auto;
+  margin-top: -24px;
+}
+
+.link-a {
+  display: inline-block;
+  vertical-align: top;
+  width: 46px;
+  height: 48px;
+  margin-left: 2px;
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+
+.map {
+}
 
 
 
