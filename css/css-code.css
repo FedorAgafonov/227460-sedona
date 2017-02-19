@@ -116,7 +116,7 @@ a {
 
 .header-images img:nth-child(3) {
   position: absolute;
-  top: 531px;
+  top: 515px;
   z-index: 2;
 }
 
@@ -143,7 +143,7 @@ a {
 .all-center {
   margin: -16px auto;
   width: 1200px;
-  box-shadow: 0 0 160px #dbdbdb;
+  box-shadow: 0 0 80px #dbdbdb;
 }
 
 .namber-one {
@@ -264,7 +264,7 @@ a {
 }
 
 .map-top h2 {
-  width: 210px;
+  width: 300px;
   margin: 0 auto;
   margin-bottom: 28px;
 }
@@ -276,11 +276,14 @@ a {
 
 .button {
   width: 568px;
-  height: 87px;
+  height: 86px;
   color: #fff;
   outline: none;
+  font-size: 21px;
   background-color: #766357;
-  margin-top: 53px;
+  margin: 0 auto;
+  margin-top: 47px;
+  padding-top: 9px;
   text-transform: uppercase;
   text-align: center;
   border: none;
@@ -510,9 +513,37 @@ a {
 }
 
 .top button {
-  border: none;
+  width: 2px;
+  height: 18px;
+  border: 4px solid #fff;
   background-color: #fff;
   width: 20px;
+}
+
+.top button:nth-child(1) {
+  background-image: url("../img/bottom.png");
+  background-position: 1px 0px;
+}
+
+.top button:nth-child(2) {
+  background-image: url("../img/top.png");
+  background-position: 1px 0px;
+}
+
+.top button:nth-child(1):hover {
+  background-image: url("../img/black-top.png");
+}
+
+.top button:nth-child(2):hover {
+  background-image: url("../img/black-bottom.png");
+}
+
+.top button:nth-child(1):active {
+  background-image: url("../img/blue-top.png");
+}
+
+.top button:nth-child(2):active {
+  background-image: url("../img/blue-bottom.png");
 }
 
 .sorting {
@@ -791,68 +822,212 @@ footer {
   margin: 0px;
 }
 
-
 .map {
   margin-bottom: px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+.form-layout-row-half-btns .btn-minus,
+.form-layout-row-half-btns .btn-plus {
+  background: url("../img/sprite-2.png");
 }
 
-body > * > * {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+.form-layout-row-half-btns .btn-plus {
+  background-position: 35px 0px;
 }
 
-body > * > * > * {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+.form-layout-row-half-btns .btn-plus:hover {
+  background-position: 35px -38px;
 }
 
-body > * > * > * > * {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+.form-layout-row-half-btns .btn-plus:active {
+  background-position: 35px -76px;
 }
 
-body > * > * > * > * > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+.form-layout-row-half-btns .btn-minus:hover {
+  background-position: 0px -38px;
 }
 
-body > * > * > * > * > * > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px blue;
+.form-layout-row-half-btns .btn-minus:active {
+  background-position: 0px -76px;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateX(-435px);
+  }
+  70%  {
+    transform: translateX(30px);
+  }
+  90%  {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.hotel-search-box {
+  display: none;
+  position: absolute;
+  width: 568px;
+  left: 50%;
+  margin-top: 5px;
+  margin-left: -285px;
+  min-height: 500px;
+  z-index: 1;
+}
+
+.hotel-search-box-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.hotel-search-box-error {
+  animation: shake 0.6s;
+}
+
+
+
+.hotel-search-box h2 {
+  display: none;
+}
+
+.hotel-search-box form {
+  background-color: #fff;
+  padding: 55px 56px 55px 54px;
+  box-shadow: 0 5px 15px 5px rgba(0,1,1,0.15);
+}
+
+.hotel-search-box .form-layout-row {
+  margin-bottom: 25px;
+}
+
+.hotel-search-box form label {
+  display: block;
+  width: 106px;
+  padding: 9px 3px;
+}
+
+.hotel-search-box form input {
+  display: inline-block;
+}
+
+.hotel-search-box form input[type=text] {
+  border: 2px solid #f2f2f2;
+  outline: none;
+  font: 700 14px/26px 'PT Sans', Arial;
+  background-color: #f2f2f2;
+}
+
+.hotel-search-box form input[type=text]:hover {
+  border-color: #ebebeb;
+  background-color: #ebebeb;
+}
+
+.hotel-search-box form input[type=text]:focus {
+  border-color: #e5e5e5;
+  background-color: #fff;
+}
+
+.date-in,
+.date-out {
+  width: 287px;
+  padding: 5px 42px 5px 13px;
+  background: url('../img/sprite-3.png') no-repeat;
+  background-position: 310px 4px;
+  float: right;
+  margin-top: -38px;
+}
+
+.date-in:hover,
+.date-out:hover {
+  background-position: 311px -25px;
+}
+
+.date-in:active,
+.date-out:active {
+  background-position: 311px -54px;
+}
+
+.form-layout-row-half {
+  width: 50%;
+  margin-top: 5px;
+  float: left;
+}
+
+.form-layout-row-half-btns {
+  font-size: 0;
+  float: right;
+  margin-top: -39px;
+}
+
+.form-layout-row-half-btns input {
+  font-size: 14px;
+  line-height: 26px;
+  vertical-align: middle;
+}
+
+.form-layout-row-half-btns input[type=button] {
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  text-indent: -10000px;
+}
+
+.form-layout-row-half-btns input[type=text] {
+  width: 26px;
+  padding: 4px;
+  min-height: 26px;
+  text-align: center;
+}
+
+.hotel-search-box .form-layout-row-half label.count-children {
+  width: 58px;
+  padding-left: 50px;
+}
+
+.hotel-search-box .form-layout-row input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.hotel-search-box .form-layout-row input:-moz-placeholder {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.hotel-search-box .btn-search {
+  width: 100%;
+  padding: 16px 0;
+  margin-top: 27px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background-color: #81b3d2;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.hotel-search-box .btn-search:hover {
+  background-color: #669ec0;
+}
+
+.hotel-search-box .btn-search:active {
+  background-color: #5496bd;
 }
