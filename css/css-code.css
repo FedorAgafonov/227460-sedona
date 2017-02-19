@@ -48,6 +48,11 @@ a {
   padding: 0 73px;
 }
 
+#logo-img {
+  position: relative;
+  z-index: 2;
+}
+
 .navigation ul {
   padding: 0;
   text-align: center;
@@ -59,6 +64,18 @@ a {
   vertical-align: top;
   margin-left: 0px;
   margin-top: 15px;
+}
+
+.navigation a:hover {
+  color: #81b3d2;
+}
+
+.navigation a:active {
+  color: #f4f4f4;
+}
+
+.active-header {
+  color: #766357;
 }
 
 .navigation li:nth-child(1) {
@@ -84,18 +101,27 @@ a {
 }
 
 .header-images img:nth-child(1) {
-  position: absolute;
-  margin-bottom: 100px;
+  position: relative;
+  margin-bottom: 0px;
   margin-top: -10px;
+  z-index: 1;
 }
 
 .header-images img:nth-child(2) {
-  position: relative;
-  top: 441px;
+  position: absolute;
+  top: 156px;
+  left: 491px;
+  z-index: 2;
+}
+
+.header-images img:nth-child(3) {
+  position: absolute;
+  top: 531px;
+  z-index: 2;
 }
 
 .sedona-cause {
-  margin-top: 448px;
+  margin-top: -5px;
   margin-bottom: 1px;
   padding-left: 355px;
   padding-top: 39px;
@@ -115,9 +141,9 @@ a {
 
 
 .all-center {
-  margin: 0 auto;
+  margin: -16px auto;
   width: 1200px;
-  border-left: ;
+  box-shadow: 0 0 160px #dbdbdb;
 }
 
 .namber-one {
@@ -292,11 +318,11 @@ a {
   color: #fff;
 }
 
-input[type="checkbox"] {
+.filter input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"] + label {
+.filter input[type="checkbox"] + label {
   display: block;
   width: 102px;
   margin: 26px 38px;
@@ -306,32 +332,30 @@ input[type="checkbox"] + label {
   cursor: pointer;
 }
 
-input[type="checkbox"] + label::before {
+.filter input[type="checkbox"] + label:before {
   content: "";
   display: block;
-  width: 17px;
-  height: 18px;
-  border: 2px solid #fff;
-  border-radius: 3px;
+  width: 26px;
+  height: 22px;
+  background: url("../img/emptu-check.png") no-repeat;
+  background-position: -1px 0px;
   position: absolute;
   top: -1px;
   left: -38px;
 }
 
-input[type="checkbox"]:active + label::before {
-  opacity: .3;
+.filter input[type="checkbox"]:checked + label:before {
+  content: "";
+  background: url("../img/check.png") no-repeat;
+  background-position: -1px 0px;
 }
 
-input[type="checkbox"]:checked + label::after {
-  content: "";
-  position: absolute;
-  top: px;
-  left: px;
-  background-image: url("../img/sprite.psd");
-  background-repeat: no-repeat;
-  width: 28px;
-  height: 23px;
-  background-position: 0px 0px;
+.filter input[type="checkbox"] + label:hover:before {
+  color: #b5b5b6;
+}
+
+.filter input[type="checkbox"]:disabled + label:before {
+  color: #6a6a6a;
 }
 
 .filter-range {
@@ -475,13 +499,26 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .foundet {
-  width: 117px;
+  width: 120px;
+  margin-left: 73px;
+}
+
+.top {
+  float: right;
+  margin-right: 69px;
+  margin-top: -47px;
+}
+
+.top button {
+  border: none;
+  background-color: #fff;
+  width: 20px;
 }
 
 .sorting {
   float: left;
   margin-top: -60px;
-  margin-left: 164px;
+  margin-left: 237px;
 }
 
 .sorting h5 {
@@ -513,8 +550,28 @@ input[type="checkbox"]:checked + label::after {
   color: #81b3d2;
 }
 
-.not-active {
+.active:hover {
   border-bottom: 1px dotted #81b3d2;
+}
+
+.active:active {
+  color: #000000;
+}
+
+.dotted {
+  opacity: 0.3;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.dotted:hover {
+  opacity: 1;
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.dotted:active {
+  opacity: 1;
+  color: #000000;
 }
 
 .example {
@@ -533,8 +590,32 @@ input[type="checkbox"]:checked + label::after {
   width: 1056px;
 }
 
+.hotel a:hover {
+  color: #81b3d2;
+}
+
+.hotel a:active {
+  color: #cacaca;
+}
+
+
 .hotel img {
   float: left;
+}
+
+#four {
+  float: right;
+  margin-top: -91px;
+}
+
+#three {
+  float: right;
+  margin-top: -91px;
+}
+
+#two {
+  float: right;
+  margin-top: -91px;
 }
 
 .hotel h3 {
@@ -582,6 +663,14 @@ input[type="checkbox"]:checked + label::after {
   color: #fff;
 }
 
+.bottom1:hover {
+  background-color: #669ec0;
+}
+
+.bottom1:active {
+  background-color: #5496bd;
+}
+
 .bottom2 {
   width: 142px;
   height: 23px;
@@ -589,6 +678,14 @@ input[type="checkbox"]:checked + label::after {
   padding-top: 4px;
   background-color: #766357;
   color: #fff;
+}
+
+.bottom2:hover {
+  background-color: #604e43;
+}
+
+.bottom2:active {
+  background-color: #503e33;
 }
 
 .rating {
@@ -607,18 +704,25 @@ input[type="checkbox"]:checked + label::after {
 }
 
 footer {
-  margin-top: 1000px;
+  height: 120px;
+  margin-top: 5px;
+}
+
+.bot-map {
+  height: 28px;
+  padding: 46px 0;
 }
 
 .visit {
   width: 140px;
   font-size: 21px;
+  margin-left: 132px;
 }
 
 .link {
   width: 154px;
   margin: 0 auto;
-  margin-top: -24px;
+  margin-top: -37px;
 }
 
 .link-a {
@@ -631,8 +735,65 @@ footer {
   text-align: center;
 }
 
+.link-a:hover {
+  background-color: #669ec0;
+}
+
+.link-a:active {
+  background-color: #5496bd;
+}
+
+#twiter {
+  margin-top: 17px;
+}
+
+#fase {
+  margin-top: 13px;
+}
+
+#you {
+  margin-top: 16px;
+}
+
+.by-html {
+  float: right;
+  width: 215px;
+  height: 57px;
+  margin-top: -52px;
+  margin-right: 103px;
+}
+
+.by-html a {
+  width: 113px;
+  height: 39px;
+  padding: 0;
+  margin-top: -28px;
+  float: right;
+  background-image: url("../img/html.png");
+  display: block;
+}
+
+.by-html a:hover {
+  background-image: url("../img/html-footer-2.png");
+}
+
+.by-html a:active {
+  background-image: url("../img/html-footer-3.png");
+}
+
+.by-html .span {
+  font-size: 14px;
+  width: 78px;
+  margin-top: 19px;
+}
+
+.by-html img {
+  margin: 0px;
+}
+
 
 .map {
+  margin-bottom: px;
 }
 
 
