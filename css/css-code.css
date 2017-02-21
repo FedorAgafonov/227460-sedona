@@ -8,14 +8,10 @@ h1 {
 }
 
 h2 {
-  font-family: 'PT Sans', sans-serif;
-  font-weight: bold;
   font-size: 30px;
 }
 
 h3 {
-  font-family: 'PT Sans', sans-serif;
-  font-weight: bolder;
   font-size: 21px;
 }
 
@@ -23,20 +19,16 @@ h4 {
 }
 
 h5 {
-  font-family: 'PT Sans', sans-serif;
-  font-weight: bold;
   font-size: 12px;
 }
 
 p {
-  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
 }
 
 a {
-  font-family: 'PT Sans', sans-serif;
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 }
 
 .clearfix::after {
@@ -60,6 +52,7 @@ a {
 .navigation ul {
   padding: 0;
   text-align: center;
+  margin-left: 0px;
 }
 
 .navigation li {
@@ -67,7 +60,7 @@ a {
   font-size: 14px;
   vertical-align: top;
   margin-left: 0px;
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .navigation a:hover {
@@ -83,25 +76,24 @@ a {
 }
 
 .navigation li:nth-child(1) {
-  margin-left: 0px;
+  margin-left: -3px;
 }
 
 .navigation li:nth-child(2) {
-  margin-left: 142px;
+  margin-left: 143px;
 }
 
 .navigation li:nth-child(3) {
-  position: left;
   margin-top: 0px;
-  margin-left: 115px;
+  margin-left: 117px;
 }
 
 .navigation li:nth-child(4) {
-  margin-left: 125px;
+  margin-left: 124px;
 }
 
 .navigation li:nth-child(5) {
-  margin-left: 161px;
+  margin-left: 162px;
 }
 
 .header-images img:nth-child(1) {
@@ -113,7 +105,7 @@ a {
 
 .header-images img:nth-child(2) {
   position: relative;
-  top: -445px;
+  top: -436px;
   left: 371px;
   z-index: 2;
 }
@@ -121,7 +113,7 @@ a {
 .header-images img:nth-child(3) {
   position: relative;
   top: -419px;
-  margin-left: auto;;
+  margin-left: auto;
   z-index: 2;
 }
 
@@ -137,11 +129,15 @@ a {
 
 .sedona-cause h3  {
   width: 490px;
-  margin-bottom: 31px;
+  margin-top: 22px;
+  line-height: 26px;
+  margin-bottom: 30px;
 }
 
 .sedona-cause p {
-  width: 490px;
+  width: 500px;
+  margin-left: -5px;
+  letter-spacing: 0.1px;
 }
 
 
@@ -153,6 +149,7 @@ a {
 
 .namber-one {
   margin-bottom: 3px;
+  margin-top: -5px;
 }
 
 .text {
@@ -165,15 +162,17 @@ a {
 }
 
 .text h3 {
-  width: 160px;
+  width: 150px;
   margin: 0 auto;
   line-height: 21px;
+  margin-bottom: 24px;
 }
 
 .text p {
-  width: 282px;
+  width: 305px;
   margin: 0 auto;
   margin-top: 22px;
+  margin-bottom: 21px;
   line-height: 21px;
 }
 
@@ -195,6 +194,7 @@ a {
   float: left;
   text-align: center;
   padding-bottom:30px;
+  margin-top: -5px;
 }
 
 .advantage .motel p {
@@ -221,6 +221,7 @@ a {
 
 .namber-two {
   margin-bottom: 0px;
+  margin-top: -3px;
 }
 
 .text:nth-of-type(2) {
@@ -250,7 +251,7 @@ a {
   width: 120px;
   margin: 0 auto;
   line-height: 21px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .nambers-rem div p {
@@ -271,12 +272,15 @@ a {
 .map-top h2 {
   width: 300px;
   margin: 0 auto;
+  margin-top: -11px;
   margin-bottom: 28px;
 }
 
 .map-top p {
   width: 440px;
   margin: 0 auto;
+  margin-top: -6px;
+  line-height: 24px;
 }
 
 .button {
@@ -287,8 +291,8 @@ a {
   font-size: 21px;
   background-color: #766357;
   margin: 0 auto;
-  margin-top: 47px;
-  padding-top: 9px;
+  margin-top: 50px;
+  padding-top: 3px;
   text-transform: uppercase;
   text-align: center;
   border: none;
@@ -753,6 +757,7 @@ footer {
 .visit {
   width: 140px;
   font-size: 21px;
+  margin-top: -10px;
   margin-left: 132px;
 }
 
@@ -794,7 +799,7 @@ footer {
 
 .by-html {
   float: right;
-  width: 215px;
+  width: 195px;
   height: 57px;
   margin-top: -52px;
   margin-right: 103px;
@@ -822,6 +827,7 @@ footer {
   font-size: 14px;
   width: 78px;
   margin-top: 19px;
+  margin-right: 10px;
 }
 
 .by-html img {
@@ -829,7 +835,7 @@ footer {
 }
 
 .map {
-  margin-bottom: px;
+  margin-top: -4px;
 }
 
 .form-layout-row-half-btns .btn-minus,
@@ -889,7 +895,7 @@ footer {
   position: absolute;
   width: 568px;
   left: 50%;
-  margin-top: 5px;
+  margin-top: 0px;
   margin-left: -285px;
   min-height: 500px;
   z-index: 1;
@@ -903,8 +909,6 @@ footer {
 .hotel-search-box-error {
   animation: shake 0.6s;
 }
-
-
 
 .hotel-search-box h2 {
   display: none;
@@ -923,7 +927,9 @@ footer {
 .hotel-search-box form label {
   display: block;
   width: 106px;
+  font-size: 14px;
   padding: 9px 3px;
+  margin-top: 2px;
 }
 
 .hotel-search-box form input {
