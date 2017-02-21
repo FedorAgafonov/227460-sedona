@@ -1,5 +1,6 @@
 body {
   font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -8,11 +9,13 @@ h1 {
 
 h2 {
   font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
   font-size: 30px;
 }
 
 h3 {
   font-family: 'PT Sans', sans-serif;
+  font-weight: bolder;
   font-size: 21px;
 }
 
@@ -21,6 +24,7 @@ h4 {
 
 h5 {
   font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
   font-size: 12px;
 }
 
@@ -108,20 +112,21 @@ a {
 }
 
 .header-images img:nth-child(2) {
-  position: absolute;
-  top: 156px;
-  left: 491px;
+  position: relative;
+  top: -445px;
+  left: 371px;
   z-index: 2;
 }
 
 .header-images img:nth-child(3) {
-  position: absolute;
-  top: 515px;
+  position: relative;
+  top: -419px;
+  margin-left: auto;;
   z-index: 2;
 }
 
 .sedona-cause {
-  margin-top: -5px;
+  margin-top: -424px;
   margin-bottom: 1px;
   padding-left: 355px;
   padding-top: 39px;
@@ -737,6 +742,7 @@ a {
 footer {
   height: 120px;
   margin-top: 5px;
+  background:
 }
 
 .bot-map {
