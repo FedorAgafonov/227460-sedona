@@ -52,14 +52,13 @@ a {
 .navigation ul {
   padding: 0;
   text-align: center;
-  margin-left: 0px;
+  margin-left: -5px;
 }
 
 .navigation li {
   display: inline-block;
   font-size: 14px;
   vertical-align: top;
-  margin-left: 0px;
   margin-top: 18px;
 }
 
@@ -76,11 +75,11 @@ a {
 }
 
 .navigation li:nth-child(1) {
-  margin-left: -3px;
+  margin-left: 0px;
 }
 
 .navigation li:nth-child(2) {
-  margin-left: 143px;
+  margin-left: 140px;
 }
 
 .navigation li:nth-child(3) {
@@ -89,11 +88,11 @@ a {
 }
 
 .navigation li:nth-child(4) {
-  margin-left: 124px;
+  margin-left: 120px;
 }
 
 .navigation li:nth-child(5) {
-  margin-left: 162px;
+  margin-left: 158px;
 }
 
 .header-images img:nth-child(1) {
@@ -118,25 +117,25 @@ a {
 }
 
 .sedona-cause {
-  margin-top: -424px;
+  margin-top: -416px;
   margin-bottom: 1px;
   padding-left: 355px;
   padding-top: 39px;
   padding-bottom: 30px;
-  height: 151px;
+  height: 143px;
   text-align: center;
 }
 
 .sedona-cause h3  {
   width: 490px;
-  margin-top: 22px;
+  margin-top: 14px;
   line-height: 26px;
   margin-bottom: 30px;
 }
 
 .sedona-cause p {
-  width: 500px;
-  margin-left: -5px;
+  width: 510px;
+  margin-left: -8px;
   letter-spacing: 0.1px;
 }
 
@@ -162,14 +161,14 @@ a {
 }
 
 .text h3 {
-  width: 150px;
+  width: 155px;
   margin: 0 auto;
   line-height: 21px;
   margin-bottom: 24px;
 }
 
 .text p {
-  width: 305px;
+  width: 315px;
   margin: 0 auto;
   margin-top: 22px;
   margin-bottom: 21px;
@@ -198,7 +197,7 @@ a {
 }
 
 .advantage .motel p {
-  width: 286px;
+  width: 300px;
   margin: 0 auto;
   line-height: 21px;
 }
@@ -248,14 +247,14 @@ a {
 }
 
 .nambers-rem div h3 {
-  width: 120px;
+  width: 140px;
   margin: 0 auto;
   line-height: 21px;
   margin-bottom: 22px;
 }
 
 .nambers-rem div p {
-  width: 265px;
+  width: 275px;
   margin:  0 auto;
   line-height: 21px;
   margin-top: 21px;
@@ -272,12 +271,12 @@ a {
 .map-top h2 {
   width: 300px;
   margin: 0 auto;
-  margin-top: -11px;
+  margin-top: -8px;
   margin-bottom: 28px;
 }
 
 .map-top p {
-  width: 440px;
+  width: 450px;
   margin: 0 auto;
   margin-top: -6px;
   line-height: 24px;
@@ -291,7 +290,7 @@ a {
   font-size: 21px;
   background-color: #766357;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 48px;
   padding-top: 3px;
   text-transform: uppercase;
   text-align: center;
@@ -511,7 +510,7 @@ a {
 }
 
 .foundet {
-  width: 120px;
+  width: 140px;
   margin-left: 73px;
 }
 
@@ -844,23 +843,27 @@ footer {
 }
 
 .form-layout-row-half-btns .btn-plus {
-  background-position: 35px 0px;
+  background-position: 38px 2px;
 }
 
 .form-layout-row-half-btns .btn-plus:hover {
-  background-position: 35px -38px;
+  background-position: 38px -36px;
 }
 
 .form-layout-row-half-btns .btn-plus:active {
-  background-position: 35px -76px;
+  background-position: 38px -74px;
+}
+
+.form-layout-row-half-btns .btn-minus {
+  background-position: 0px 2px;
 }
 
 .form-layout-row-half-btns .btn-minus:hover {
-  background-position: 0px -38px;
+  background-position: 0px -36px;
 }
 
 .form-layout-row-half-btns .btn-minus:active {
-  background-position: 0px -76px;
+  background-position: -1px -74px;
 }
 
 @keyframes bounce {
@@ -958,19 +961,27 @@ footer {
   width: 287px;
   padding: 5px 42px 5px 13px;
   background: url('../img/sprite-3.png') no-repeat;
-  background-position: 310px 4px;
+  background-position: 312px 4px;
   float: right;
   margin-top: -38px;
 }
 
 .date-in:hover,
 .date-out:hover {
-  background-position: 311px -25px;
+  background-position: 312px -25px;
 }
 
 .date-in:active,
 .date-out:active {
-  background-position: 311px -54px;
+  background-position: 312px -54px;
+}
+
+.form-layout-row .to-left:nth-child(1) {
+  margin-top: 4px;
+}
+
+.form-layout-row .form-layout-row-half .to-left {
+  margin-top: 2px;
 }
 
 .form-layout-row-half {
@@ -1009,9 +1020,10 @@ footer {
   text-align: center;
 }
 
-.hotel-search-box .form-layout-row-half label.count-children {
+.form-layout-row .form-layout-row-half label.count-children {
   width: 58px;
-  padding-left: 50px;
+  padding-left: 54px;
+  margin-top: 0px;
 }
 
 .hotel-search-box .form-layout-row input::-webkit-input-placeholder {
@@ -1027,7 +1039,8 @@ footer {
 .hotel-search-box .btn-search {
   width: 100%;
   padding: 16px 0;
-  margin-top: 27px;
+  margin-top: 28px;
+  margin-left: 2px;
   color: #ffffff;
   border: none;
   outline: none;
