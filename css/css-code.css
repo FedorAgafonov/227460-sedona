@@ -44,7 +44,7 @@ a {
   padding: 0 73px;
 }
 
-#logo-img {
+.navigation img {
   position: relative;
   z-index: 2;
 }
@@ -187,7 +187,7 @@ a {
   margin-bottom: 0px;
 }
 
-.advantage .motel {
+.advantage article {
   width: 400px;
   height: 300px;
   float: left;
@@ -196,25 +196,25 @@ a {
   margin-top: -5px;
 }
 
-.advantage .motel p {
+.advantage article p {
   width: 300px;
   margin: 0 auto;
   line-height: 21px;
 }
 
-.advantage .motel h3 {
+.advantage article h3 {
   margin-top: 23px;
 }
 
-#img-hotel {
+.live img {
   margin-top: 60px;
 }
 
-#img-eat {
+.eatest img {
   margin-top: 62px;
 }
 
-#img-present {
+.psenter img {
   margin-top: 56px;
 }
 
@@ -348,7 +348,7 @@ a {
   display: block;
   width: 26px;
   height: 22px;
-  background: url("../img/emptu-check.png") no-repeat;
+  background: url("../img/sprite/sprite-4.png") no-repeat;
   background-position: -1px 0px;
   position: absolute;
   top: -1px;
@@ -357,8 +357,8 @@ a {
 
 .filter input[type="checkbox"]:checked + label:before {
   content: "";
-  background: url("../img/check.png") no-repeat;
-  background-position: -1px 0px;
+  background: url("../img/sprite/sprite-4.png") no-repeat;
+  background-position: -29px 0px;
 }
 
 .filter input[type="checkbox"] + label:hover:before {
@@ -529,29 +529,33 @@ a {
 }
 
 .top button:nth-child(1) {
-  background-image: url("../img/bottom.png");
-  background-position: 1px 0px;
+  background-image: url("../img/sprite/sprite-1.png");
+  background-position: -1px -2px;
 }
 
 .top button:nth-child(2) {
-  background-image: url("../img/top.png");
-  background-position: 1px 0px;
+  background-image: url("../img/sprite/sprite-1.png");
+  background-position: -17px -2px;
 }
 
 .top button:nth-child(1):hover {
-  background-image: url("../img/black-top.png");
+  background-image: url("../img/sprite/sprite-1.png");
+  background-position: -1px -32px;
 }
 
 .top button:nth-child(2):hover {
-  background-image: url("../img/black-bottom.png");
+  background-image: url("../img/sprite/sprite-1.png");
+  background-position: -17px -32px;
 }
 
 .top button:nth-child(1):active {
-  background-image: url("../img/blue-top.png");
+  background-image: url("../img/sprite/sprite-1.png");
+  background-position: -1px -17px;
 }
 
 .top button:nth-child(2):active {
-  background-image: url("../img/blue-bottom.png");
+  background-image: url("../img/sprite/sprite-1.png");
+  background-position: -17px -2px;
 }
 
 .sorting {
@@ -642,17 +646,7 @@ a {
   float: left;
 }
 
-#four {
-  float: right;
-  margin-top: -91px;
-}
-
-#three {
-  float: right;
-  margin-top: -91px;
-}
-
-#two {
+.four {
   float: right;
   margin-top: -91px;
 }
@@ -766,7 +760,7 @@ footer {
   margin-top: -37px;
 }
 
-.link-a {
+.link a {
   display: inline-block;
   vertical-align: top;
   width: 46px;
@@ -776,23 +770,23 @@ footer {
   text-align: center;
 }
 
-.link-a:hover {
+.link a:hover {
   background-color: #669ec0;
 }
 
-.link-a:active {
+.link a:active {
   background-color: #5496bd;
 }
 
-#twiter {
+.twiter img {
   margin-top: 17px;
 }
 
-#fase {
+.fase img {
   margin-top: 13px;
 }
 
-#you {
+.you img {
   margin-top: 16px;
 }
 
@@ -810,16 +804,18 @@ footer {
   padding: 0;
   margin-top: -28px;
   float: right;
-  background-image: url("../img/html.png");
+  background-image: url("../img/sprite/sprite-5.png");
   display: block;
 }
 
 .by-html a:hover {
-  background-image: url("../img/html-footer-2.png");
+  background-image: url("../img/sprite/sprite-5.png");
+  background-position: 0px -39px;
 }
 
 .by-html a:active {
-  background-image: url("../img/html-footer-3.png");
+  background-image: url("../img/sprite/sprite-5.png");
+  background-position: 0px 39px;
 }
 
 .by-html .span {
@@ -839,7 +835,7 @@ footer {
 
 .form-layout-row-half-btns .btn-minus,
 .form-layout-row-half-btns .btn-plus {
-  background: url("../img/sprite-2.png");
+  background: url("../img/sprite/sprite-2.png");
 }
 
 .form-layout-row-half-btns .btn-plus {
@@ -863,7 +859,7 @@ footer {
 }
 
 .form-layout-row-half-btns .btn-minus:active {
-  background-position: -1px -74px;
+  background-position: 0px -74px;
 }
 
 @keyframes bounce {
@@ -960,7 +956,7 @@ footer {
 .date-out {
   width: 287px;
   padding: 5px 42px 5px 13px;
-  background: url('../img/sprite-3.png') no-repeat;
+  background: url("../img/sprite/sprite-3.png") no-repeat;
   background-position: 312px 4px;
   float: right;
   margin-top: -38px;
@@ -968,12 +964,12 @@ footer {
 
 .date-in:hover,
 .date-out:hover {
-  background-position: 312px -25px;
+  background-position: 313px -25px;
 }
 
 .date-in:active,
 .date-out:active {
-  background-position: 312px -54px;
+  background-position: 313px -54px;
 }
 
 .form-layout-row .to-left:nth-child(1) {
